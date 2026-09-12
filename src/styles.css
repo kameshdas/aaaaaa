@@ -5,8 +5,12 @@
 /* Hide Lovable badge */
 #lovable-badge,
 [id*="lovable-badge"],
+[class*="lovable-badge"],
 a[href*="lovable.dev"],
-[data-lovable-badge] {
+a[href*="lovable"],
+[data-lovable-badge],
+#lovable-badge-container,
+iframe[src*="lovable"] {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
