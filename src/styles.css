@@ -1,11 +1,7 @@
-/* Hide Edit with Lovable badge */
-#lovable-badge,
-#lovable-badge-container,
-[id^="lovable-badge"],
-[data-lovable-badge],
-a[href*="lovable.dev"] {
-  display: none !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
 }
