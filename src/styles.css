@@ -4,15 +4,23 @@
 
 /* Hide Lovable badge */
 #lovable-badge,
-[id*="lovable-badge"],
-[class*="lovable-badge"],
+#lovable-badge-root,
+#lovable-badge-container,
+#lovable-editor-badge,
+[id*="lovable"],
+[class*="lovable"],
+[data-lovable-badge],
 a[href*="lovable.dev"],
 a[href*="lovable"],
-[data-lovable-badge],
-#lovable-badge-container,
-iframe[src*="lovable"] {
+iframe[src*="lovable"],
+.lovable-badge {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
   pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
 }
